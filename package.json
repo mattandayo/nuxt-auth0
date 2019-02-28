@@ -15,6 +15,7 @@
   "dependencies": {
     "auth0-lock": "^11.14.0",
     "core-js": "^2.6.5",
+    "jwt-decode": "^2.2.0",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
