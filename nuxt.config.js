@@ -35,5 +35,10 @@ module.exports = {
       }
     }
   },
-  mode: 'spa'
+  mode: 'spa',
+  plugins: ['~/plugins/auth0.js'],
+  auth0: {
+    domain: 'mattandayo.auth0.com',
+    clinentID: '9IoDA0BS27WrXnbrjZS5w3Hi2V8Bki79'
+  }
 }
