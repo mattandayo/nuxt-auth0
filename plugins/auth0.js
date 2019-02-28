@@ -1,4 +1,6 @@
 import Auth0Lock from 'auth0-lock'
+import jwtDecode from 'jwt-decode'
+import queryString from 'query-string'
 import nuxtConfig from '~/nuxt.config'
 const config = nuxtConfig.auth0
 
