@@ -32,6 +32,14 @@ class Auth0Util {
   getQueryParams() {
     return queryString.parse(location.hash)
   }
+
+  setToken({access_token, id_token, expires_in}) {
+    const localStorage = window.localStorage
+    localStorage.setItem('accessToken', access_token)
+    localStorage.setItem('idToken', id_token)
+    localStorage.setItem('expiresAt', expires_in * 1000 + new Date().getTime())
+    localStorage.setItem('user', JSON.stringfy(jwtDecode(id_token)))
+  }
 }
 
 export default (context, inject) => {
