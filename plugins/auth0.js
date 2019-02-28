@@ -28,6 +28,10 @@ class Auth0Util {
   getBaseUrl() {
     return `${window.location.protocol}//${window.location.host}`
   }
+
+  getQueryParams() {
+    return queryString.parse(location.hash)
+  }
 }
 
 export default (context, inject) => {
