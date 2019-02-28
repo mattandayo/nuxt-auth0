@@ -49,6 +49,14 @@ class Auth0Util {
     const expiresAt = window.localStorage.getItem('expiresAt')
     return new Date().getTime() < expiresAt
   }
+
+  unsetToken() {
+    const localStorage = window.localStorage
+    localStorage.removeItem('accessToken')
+    localStorage.removeItem('idToken')
+    localStorage.removeItem('expiresAt')
+    localStorage.removeItem('user')
+  }
 }
 
 export default (context, inject) => {
