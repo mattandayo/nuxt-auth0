@@ -38,7 +38,11 @@ class Auth0Util {
     localStorage.setItem('accessToken', access_token)
     localStorage.setItem('idToken', id_token)
     localStorage.setItem('expiresAt', expires_in * 1000 + new Date().getTime())
-    localStorage.setItem('user', JSON.stringfy(jwtDecode(id_token)))
+    localStorage.setItem('user', JSON.stringify(jwtDecode(id_token)))
+  }
+
+  setTokenByQuery() {
+    this.setToken(this.getQueryParams())
   }
 }
 
