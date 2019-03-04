@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{473:function(t,n,e){"use strict";e.r(n);e(155);var o={mounted:function(){this.$auth0.unsetToken(),this.$router.replace("/")}},r=e(46),component=Object(r.a)(o,function(){var t=this.$createElement;return(this._self._c||t)("p",[this._v("Singing out...")])},[],!1,null,null,null);n.default=component.exports}}]);

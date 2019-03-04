@@ -42,5 +42,8 @@ module.exports = {
   auth0: {
     domain: 'mattandayo.auth0.com',
     clinentID: '9IoDA0BS27WrXnbrjZS5w3Hi2V8Bki79'
+  },
+  generate: {
+    dir: '../public'
   }
 }
